@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hacker.js</title>
+    <link rel="icon" type="image/png" href="favicon.jpg">
+    <style>
+        body {
+            background-color: #000;
+            color: #00ff00;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 18px;
+            padding: 20px;
+            margin: 0;
+            overflow-y: scroll;
+            cursor: text;
+        }
+        
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #000; }
+        ::-webkit-scrollbar-thumb { background: #005500; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #00ff00; }
+
+        #console {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+
+        #console::after {
+            content: "|";
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            0%, 49% { opacity: 1; }
+            50%, 100% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+
+<div id="console"></div>
+
+<script src="hacker.js"></script>
+</body>
+</html>
